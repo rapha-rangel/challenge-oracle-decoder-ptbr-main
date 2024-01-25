@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F5FC;
+  font-family: 'Inter', sans-serif;
+}
+
+.main {
+  display: flex;
+  margin: 40px;
+}
+
+.form {
+  width: 70%;
+}
+
+.box {
+  width: 30%;
+}
+
+.logo-image {
+  width:120px;
+  height:48px;
+}
+
+.form-input {
+  margin-left: 200px;
+  margin-right: 40px;
+}
+
+.btns {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap:8px;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  height: 67px;
+  padding: 24px;
+  margin-top: 10px;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#btn-cripto {
+  background-color: #0A3871;
+  color: #ffffff;
+  width: 100%;
+}
+
+#btn-descripto {
+  width: 100%;
+}
+
+
+.text-input {
+  font-family: 'Inter', sans-serif;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-weight: 400;
+  height: 603px;
+  font-size: 32px;
+  line-height: 48px;
+  background-color: #F3F5FC;
+  color: #0A3871;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+::placeholder {
+  color: #0A3871;
+  text-align: justify;
+}
+
+.legenda {
+  display: flex;
+  height: 18px;
+  align-items: center;
+  opacity: 80%;
+  gap: 8px;
+}
+
+.exclamacao {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #262729;
+  color: #ffffff;
+  border-radius: 100%;
+  padding: 0.2rem 0.6rem;
+}
+
+.legenda-texto {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #495057;
+}
+
+.box-empty {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  height: 944px;
+  background-color: #ffffff;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  word-break: break-word;
+}
+
+.box-text {
+  display: none;
+  align-content: space-between;
+  padding: 30px 30px 15px 30px;
+  height: 944px;
+  background-color: #ffffff;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  word-break: break-word;
+}
+
+.box-message {
+  margin-top: 32px;
+  text-align: center;
+}
+
+#box-message-title {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #343A40;
+}
+
+#box-text-message-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #495057;
+  overflow-y: scroll;
+
+}
+
+#box-message-subtitle {
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #495057;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: grid;
+  }
+
+  .logo-image {
+    position: absolute;
+    left: 0;
+  }
+  .form{
+    width: 100%;
+  }
+  .form-input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-input {
+    margin-top: 200px;
+  }
+
+  .box {
+    height: 100%;
+    width:100%;
+  }
+
+  .box-empty {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 32px;
+    height: 100%;
+    width:100%;
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    margin: 31px 0 ;
+    border-radius: 32px;
+    word-break: break-word;
+  }
+  
+  .box-text {
+    display: none;
+    align-content: space-between;
+    padding: 20px 32px;
+    height: 100%;
+    width:100%;
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    margin: 31px 0 ;
+    border-radius: 32px;
+    word-break: break-word;
+  }
+
+  .image-quality {
+    display: none;
+  }
+
+  .box-message {
+    margin-top: 0;
+  }
+
+  #box-message-title {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo-image {
+    position: absolute;
+    left: -24px;
+  }
+  .main {
+    margin: 16px;
+  }
+  .text-input {
+    margin-top: 136px;
+    height: 299px;
+  }
+  .btns {
+    width: 100%;
+    margin-top: 16px;
+    display: block;
+    gap:8px;
+  }
+
+  #box-message-subtitle {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

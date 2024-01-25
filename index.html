@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador Alura Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <section class="form">
+      <img src="./img/frame6.png" alt="Logo_Alura" class="logo-image"/>
+      <div class="form-input">
+        <textarea cols="30" rows="100" class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Digite seu texto"></textarea>
+        <div class="legenda">
+          <p class="exclamacao">!</p>
+          <label class="legenda-texto" for="input-texto">Apenas letras minúsculas, sem acento</label>
+        </div>
+        <div class="btns">
+          <button class="btn" id="btn-cripto" >codificador</button>
+          <button class="btn" id="btn-descripto" >descriptografar</button>
+        </div>
+      </div>
+    </section>
+  
+    <section class="box">
+      <div class="box-empty">
+        <img src="./img/highQuality.svg" alt="imagem-quality" class="image-quality" />
+        <div class="box-message">
+          <h2 id="box-message-title">Nenhuma mensagem encontarda</h2>
+          <p id="box-message-subtitle"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+      </div>
+      <div class="box-text">
+        <h2 id="box-text-message-title">Texto criptografado</h2>
+        <button class="btn" id="btn-copy">Copiar</button>
+      </div>
+      <!-- <input class="btn" type="submit" value="copiar" id="btn-copy"> -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
